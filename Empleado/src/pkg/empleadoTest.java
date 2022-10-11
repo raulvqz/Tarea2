@@ -43,7 +43,7 @@ class empleadoTest {
 		assertEquals(actual, expected);
 		//fail("Not yet implemented");
 	}
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Encargado_1100_10() {
 		tipo = tipo.Encargado;
 		ventasMes = 1100;
@@ -55,7 +55,7 @@ class empleadoTest {
 		//fail("Not yet implemented");
 	}
 	
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Encargado_800_10() {
 		tipo = tipo.Encargado;
 		ventasMes = 800;
@@ -66,7 +66,7 @@ class empleadoTest {
 		assertEquals(actual, expected);
 		//fail("Not yet implemented");
 	}
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Encargado_1500_10() {
 		tipo = tipo.Encargado;
 		ventasMes = 1500;
@@ -78,7 +78,7 @@ class empleadoTest {
 		//fail("Not yet implemented");
 	}
 	
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Encargado_1000_10() {
 		tipo = tipo.Encargado;
 		ventasMes = 1000;
@@ -90,7 +90,7 @@ class empleadoTest {
 		//fail("Not yet implemented");
 	}
 	
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Vendedor_1000_10() {
 		tipo = tipo.Vendedor;
 		ventasMes = 1000;
@@ -102,7 +102,7 @@ class empleadoTest {
 		//fail("Not yet implemented");
 	}
 	
-	@AfterEach
+	@Test
 	void testCalculoNominaBruta_Vendedor_1000_0() {
 		tipo = tipo.Vendedor;
 		ventasMes = 1000;
@@ -124,13 +124,14 @@ class empleadoTest {
 		//fail("Not yet implemented");
 		
 	}
-
+	@Test
 	void testCalculoNominaNeta_Tramo15() {
 		float expected = 1870;
 		float actual = empleado.calculoNominaNeta (2200);
 		assertEquals(actual, expected);
 		//fail("Not yet implemented");
 	}
+	@Test
 	void testCalculoNominaNeta_Tramo18() {
 		float expected = 2050;
 		float actual = empleado.calculoNominaNeta (2500);

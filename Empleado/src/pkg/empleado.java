@@ -17,10 +17,16 @@ public class empleado {
 		else if(tipo==TipoEmpleado.Encargado) 
 			salarioBase= 2500;
 		
-		if(ventasMes >= 1000)
-			if(ventasMes >=1500)nominaBruta = salarioBase + 200 + horasExtra*30;
-			else nominaBruta = salarioBase + 100 + horasExtra*30;
-		
+		if(ventasMes >= 1000) {
+			if(ventasMes >=1500) {
+				salarioBase = salarioBase + 200 ;
+			}
+			else {
+				salarioBase = salarioBase + 100;
+			}
+		}
+		salarioBase += horasExtra*30;
+		nominaBruta = salarioBase;
 		return nominaBruta;
 		
 	}
